@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOM Q&A</title>
+    <link rel="stylesheet" href="custom q&a.css">
+
+</head>
+<body>
+    <header>
+        <div id="wrap">
+            <div id="header">
+                <ul id="img" class=""></ul>
+                    <li><a href="main.html"><img src="logo.png" ></a></li>
+    
+                <ul id="gnb" class="">
+                    <li>
+                        <ul><a href="Custom.html">Custom</a></ul>
+                        <div class="snb">
+                            <ul>
+                                <li><b>Samsang</b></li>
+                                <ul>
+                                    <li><a href="">Buds</a></li>
+                                    <li><a href="">Buds Pro</a></li>
+                                </ul> <br>
+                                    
+                                <li><b>Apple</b></li>
+                                <ul>
+                                    <li><a href="">AirPods2</a></li>
+                                    <li><a href="">AirPods3</a></li>
+                                    <li><a href="">AirPods Pro</a></li>
+                                    <li><a href="Custom.html">Airpods Max</a></li>
+                                </ul><br>
+                                <li><b>Sony</b></li>
+                                <ul>
+                                    <li><a href="">wh-1000xm4</a></li>
+                                    <li><a href="">wh-1000xm5</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Instrument</a>
+                        <div class="snb">
+                          <ul>
+                            <li><b>Samsang</b></li>
+                            <ul>
+                                <li><a href="[5] inst_buds.html">Buds</a></li>
+                                <li><a href="[6] inst_budspro.html">Buds Pro</a></li>
+                            </ul> <br>
+                                
+                            <li><b>Apple</b></li>
+                            <ul>
+                                <li><a href="[1] inst_airpods(2세대).html">AirPods</a></li>
+                                <li><a href="[2] inst_airpods(3세대).html">AirPods3</a></li>
+                                <li><a href="[3] inst_airpodspro.html">AirPods Pro</a></li>
+                                <li><a href="[4] inst_airpodspmax.html">Airpods Max</a></li>
+                            </ul><br>
+                            <li><b>Sony</b></li>
+                            <ul>
+                                <li><a href="[7] inst_WH1000XM4.html">wh-1000xm4</a></li>
+                                <li><a href="[8] inst_WH1000XM5.html">wh-1000xm5</a></li>
+                            </ul>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="shopping.html">Cart</a>
+                       
+                    </li>
+                    <li>
+                        <a href="mypage.html">Member</a>
+                        <div class="snb">
+                            <ul>
+                                <li><a href="join.html" style="font-size: 20px;"><b>Join</b></a></li>
+                                <li><a href="login.html" style="font-size: 20px;"><b>Login</b></a></li>
+                                <li><a href="mypage.html" style="font-size: 20px;"><b>Mypage</b></a></li>
+    
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <script src="main.js"></script>
+    </header>
+
+    <main>
+    <div class="mypage">
+        <h1><a href="mypage.html"style="font-size: 28px;"><b>MY PAGE</b></a></h1> <br><br>
+        <h3>나의 쇼핑 정보</h2> <br><br>
+            <a href="delivery.html">주문배송조회</a> <br><br>
+            <a href="cancel.html">취소 / 교환 / 반품내역</a> <br><br>
+            <a href="review.html">상품 리뷰</a> <br><br><br>
+        
+        <h3>나의 계정 설정</h3> <br><br>
+            <a href="modify.html">회원정보수정</a> <br><br>
+            <a href="level.html">회원 등급</a><br><br>
+        </p>
+        <br>
+        <h3>고객센터</h3><br><br>
+        
+            <a href="1.html">1:1문의</a><br><br>
+            <a href="custom q&a.html">커스텀 Q&A</a><br><br>
+            <a href="instrument q&a.html">기기 Q&A</a>
+        </p>
+    </div>
+    <div id="container">
+        <center><h2>CUSTOM Q&A</h2><br><br></center>
+        <div id="post-form">
+            <form id="new-post-form">
+
+                <h3>기기 선택</h3><br>
+                <label>
+                    <select name="Instrument">
+                        <optgroup label="애플 (Apple)">
+                            <option selected>Airpods 2세대</option>
+                            <option>Airpods 3세대</option>
+                            <option>Airpods Pro</option>
+                            <option>Airpods Max</option>
+                            <option disabled></option>
+                        </optgroup>
+                        <optgroup label="삼성 (SAMSUNG)">
+                            <option>Buds</option>
+                            <option>Buds Pro</option>
+                            <option disabled></option>
+                        </optgroup>
+                        <optgroup label="소니 (SONY)">
+                            <option>Buds</option>
+                            <option>Buds Pro</option>
+                        </optgroup>
+                    </select>
+                </label>
+                <h3><br><br>이메일 입력 (e-mail)</h3><br>
+                <input type="email" id="email" name="email" required>
+
+                <h3><br><br>문의</h3><br>
+                
+                <!-- <label for="post-title">제목:</label> -->
+                <input type="text" id="post-title" required onfocus="clearDefaultText(this)" value="이곳에 제목을 입력해주세요."><br><br>
+
+                <!-- <label for="post-content">내용:</label><br> -->
+                <textarea id="post-content" cols="174" rows="10" required onfocus="clearDefaultText(this)">이곳에 문의할 내용을 입력해주세요.</textarea>
+
+                <div class="upload-container">
+                    <label for="file" class="file-label">파일 선택</label>
+                    <input type="file" id="file" class="file-input">
+                    <button class="upload-button">+</button>
+                    &nbsp;&nbsp;&nbsp;
+                    <label for="file" class="file-label">파일 선택</label>
+                    <input type="file" id="file" class="file-input">
+                    <button class="upload-button">+</button>
+                </div>
+
+                <br><br><br><h3>게시글 공개 설정</h3>
+                <label>
+                <br><input type="radio" name="post-visibility" value="public" checked> 공개글 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </label>
+                <label>
+                <input type="radio" name="post-visibility" value="private"> 비밀글
+                </label>
+                <br><br><br>
+                <p>2018년 10월 18일부터 산업안전보건법에 고객 응대 근로자   보호 조치가 시행되었습니다. 고객 응대 근로자에게 폭언, 폭행, 성희롱 등을 삼가주시기 바랍니다.</p>
+                <br><br>
+                <button type="button" id="save-draft">임시저장</button>
+                <button type="submit">게시</button>
+            </form>
+        </div>
+        <br><hr color="black" size="2px"><br><h2><center>게시글 목록</center></h2><br>
+        <ul id="post-list"></ul>
+    </div>
+    <script src="custom q&a.js"></script>
+    </main>
+    <footer>
+        <p>&copy; 2023 Custom Sound Lab DYH WEB server.</p>
+     </footer>
+</body>
+</html>

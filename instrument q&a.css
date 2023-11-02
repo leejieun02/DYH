@@ -1,0 +1,284 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+ul,li{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    color: inherit;
+}
+
+
+#wrap{
+    width: 100%;
+}
+
+#header{
+    position:fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1;
+    display:flex;
+    justify-content: space-between;
+    text-decoration: none;
+    line-height: 1.5;
+    background-color: #fff;
+    
+}
+
+#header > li > a > img {
+    width : 60px; 
+    margin-left: 80px;
+
+}
+#header > #gnb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 290px;
+    margin-right: 230px;
+}
+
+#header > #gnb::before {
+    content: "";
+    width: 100%;
+    position:absolute;
+    top: 90px;
+    left: 0;
+    height: 390px;
+    background: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.06);
+    display: block;
+}
+
+#header > #gnb::before {
+    display: none;
+}
+
+#header > #gnb.on::before {
+    display: block;
+}
+
+#header > #gnb > li .snb {
+    position:absolute;
+    top: 100px;
+    display:none;
+    
+   
+}
+
+#header > #gnb.on > li .snb {
+    display: block;
+}
+/* 멤버 밑 */
+#header > #gnb > li > .snb > ul > li + li {
+    margin-top:15px;
+}
+
+.gnb > li > ul a{
+    text-decoration: none;
+
+}
+/*기업 글씨*/
+.snb > ul > li  {
+    font-size: 22px;
+    
+
+}
+/*기기종류별 글씨*/
+.snb  li  a {
+    font-size: 16px;
+
+}
+
+main {
+			
+    margin-top: 180px;
+    margin-bottom: 500px;
+    /*margin: auto;
+    width: 500px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;*/
+    width: 100%;
+    
+    
+
+}
+
+.mypage {
+
+top: 50px;
+width: 250px; 
+margin: 20px;
+margin-top: 30px;
+float: left;
+padding: 20px;
+text-align: left;
+
+}
+
+.mypage a {
+text-decoration: none;
+color: #2d2d2d;
+font-size: 16px;
+}
+
+
+        #post-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #post-form {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .post-item {
+            /* border: 1px solid #ccc; */
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #container {
+            width: 65%;
+            margin: 0 auto;
+            margin-right: 120px;
+        }
+
+        #new-post-form button#save-draft,
+        #new-post-form button[type="submit"] {
+            display: inline-block;
+            padding: 6px 16px;
+            font-size: 16px;
+            transition: font-weight 0s;
+            background-color: white;
+            border: 1.6px solid #000;
+            color: #000;
+            margin-top: 10px;
+            margin-right: 10px; /* 버튼 간격 조정 */
+        }
+
+        #new-post-form button#save-draft:hover,
+        #new-post-form button[type="submit"]:hover {
+            font-weight: bold;
+            background-color: #000;
+            color: #fff;
+        }
+
+        
+
+        #new-post-form select[name="Instrument"] {
+            width: 60%; /* 원하는 크기로 수정 */
+            box-sizing: border-box;
+            padding: 5px;
+            float: none; /* float 속성을 해제합니다. */
+            clear: both; /* float를 해제한 다음 다음 요소 밑에 위치하도록 설정합니다. */
+        }
+
+        #new-post-form input[type="email"] {
+            width: 94%; /* 이메일 입력 칸의 가로 크기를 100%로 설정 */
+            box-sizing: border-box; /* 패딩과 테두리를 포함한 전체 박스 크기 지정 */
+            padding: 5px;
+        }
+
+        #post-title {
+            width: 95%; /* 제목 칸의 가로 크기를 100%로 설정 */
+            font-family: Arial, sans-serif; /* 원하는 폰트로 변경 */
+            box-sizing: border-box; /* 패딩과 테두리를 포함한 전체 박스 크기 지정 */
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        #post-content {
+            box-sizing: border-box;
+            width: 95%; /* 가로 크기를 95%로 설정 */
+            max-width: 100%; /* 최대 가로 크기를 100%로 설정하여 넘치지 않도록 함 */
+            font-family: Arial, sans-serif; /*원하는 폰트로 변경 */
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        .post-item hr {
+            border-top: 0.4px solid #f0f0f0; /* 원하는 두께와 색상으로 선을 그립니다. */
+            margin: 5px 0; /* 원하는 여백을 조절합니다. */
+        }
+
+        #new-post-form h3 {
+        color: #000000; /* 검은색 글자 색상으로 변경 */
+        }
+
+        select[name="Instrument"] option:checked {
+            background-color: #f0f0f0; /* 연한 배경색으로 변경 */
+            color: #000; /* 검은색 글자 색상으로 변경 */
+        }
+
+        select[name="Instrument"]:hover {
+            background-color: #f1f1f1; /* 연한 배경색으로 변경 */
+            color: #000; /* 검은색 글자 색상으로 변경 */
+        }
+
+        select[name="Instrument"] option:hover {
+            background-color: #f0f0f0; /* 연한 배경색으로 변경 */
+            color: #000; /* 검은색 글자 색상으로 변경 */
+        }
+
+        @media (max-width: 768px) {
+            /* 변경할 스타일 */
+        }
+
+
+        #new-post-form select[name="Instrument"],
+        #new-post-form input[type="email"],
+        #new-post-form input[type="text"],
+        #post-content {
+            width: 100%; /* 모든 입력 필드와 텍스트 영역의 가로 크기를 100%로 설정 */
+            box-sizing: border-box; /* 패딩과 테두리를 포함한 전체 박스 크기 지정 */
+            padding: 5px;
+        }
+
+        
+        #new-post-form input[type="radio"] {
+            appearance: none; /*브라우저 기본 스타일 제거*/
+            -webkit-appearance: none; /* Safari 및 일부 브라우저 지원 */
+            -moz-appearance: none; /* Firefox 지원 */
+            width: 15px; /* 라디오 버튼 너비 설정 */
+            height: 15px; /* 라디오 버튼 높이 설정 */
+            border: 2px solid #000; /* 라디오 버튼 테두리 스타일 및 색상 설정 */
+            border-radius: 50%; /* 원 모양으로 만들기 */
+            /* outline: none; 포커스 시 테두리 제거 */
+            margin-right: 3px; /* 라디오 버튼 간격 조정 */
+        }
+
+        /* 선택된 라디오 버튼 색상 설정 */
+        #new-post-form input[type="radio"]:checked {
+            background-color: #000; /* 선택된 라디오 버튼 배경색 설정 */
+        }
+
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            bottom: 0;
+            width: 100%; 
+        }
+       

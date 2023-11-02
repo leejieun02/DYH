@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom_Buds</title>
+    <link rel="stylesheet" href="Custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700|Nanum+Pen+Script|Nanum+Myeongjo&display=swap">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                <li><a href="main.html"><img src="로고.png"></a></li>
+                </div>
+                <li><a href="#">Custom</a>
+                <ul>
+                <li><a href="#">Buds Custom</a></li>
+                <li><a href="#">AirPods Custom</a></li>
+                <li><a href="#">AirPods Max Custom</a></li>
+                <li><a href="#">Sony Custom</a></li>
+                <li><a href="#">AirMax Custom</a></li>
+                <li><a href="#">Compare Custom</a></li>
+                </ul>
+                </li>
+                <li> <a href="#">Instrument</a>
+                <ul>
+                <li><a href="#">Buds Instrument</a></li>
+                <li><a href="#">AirPods Instrument</a></li>
+                <li><a href="#">AirPods Max Instrument</a></li>
+                <li><a href="#">Sony Instrument</a></li>
+                <li><a href="#">AirMax Instrument</a></li>
+                <li><a href="#">Compare Instrument</a></li>
+                </ul>
+                </li>
+                <li><a href="shopping.html">Cart</a></li>
+                <li> <a href="mypage.html">Member</a>
+                <ul>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="mypage.html">마이페이지</a></li>
+                </li>
+            </ul>
+        </nav>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    $('nav li').hover(
+        function() {
+            $('ul', this).stop().slideDown(200);
+        },
+        function() {
+            $('ul', this).stop().slideUp(200);
+        }
+    );
+</script>
+ </header>
+
+ <main>               
+    <section class="instrument instruments">
+        <div class="flex-container">
+            <h2></h2>
+            <div id="deviceImageContainer">
+                <img id="deviceImage" src="" alt="Device Image">
+                <canvas id="stampCanvas"></canvas> <!-- 캔버스를 이미지 위에 위치시킵니다. -->
+            </div>
+
+            <div id="container">
+                <canvas id="engravingCanvas"></canvas>
+                <p>각인 문자 :<input type="text" id="engravingText" placeholder="텍스트">
+                    <select id="fontSelect">
+                        <option value="Arial">Arial</option>
+                        <option value="'Nanum Pen Script', cursive">나눔펜</option>
+                        <option value="'Nanum Gothic', sans-serif">나눔고딕</option>
+                        <option value="'Nanum Myeongjo', serif">나눔명조</option>
+                        <option value="Courier New">Courier New</option>
+                    </select>
+                    <input type="color" id="fontColorInput" value="#000000">
+                    <button id="engraveButton">각인</button>
+                </p>
+            </div>
+
+            <fieldset>
+                <legend>커스텀</legend>
+                <br>
+                <div class="text-container">
+                    <p></p>
+                    <!-- 기기 선택 -->
+<label>기기선택:
+    <select id="deviceSelect">
+        <optgroup label="Sansung">
+            <option value="device1">버즈</option>
+            <option value="device2">버즈 프로</option>
+        </optgroup>
+    </select>
+</label>
+
+<!-- 색상 선택 옵션 - 초기 상태에서는 버즈 기기가 선택된 상태로 시작 -->
+<div id="colorOptions">색상: 
+    <label>
+        <input type="radio" name="color" value="black">
+        <span class="color-option black"></span>
+    </label>
+    <label>
+        <input type="radio" name="color" value="White">
+        <span class="color-option White"></span>
+    </label>
+    <label>
+        <input type="radio" name="color" value="purple">
+        <span class="color-option purple"></span>
+    </label>
+    <label>
+        <input type="radio" name="color" value="onyx">
+        <span class="color-option onyx"></span>
+    </label>
+    <label>
+        <input type="radio" name="color" value="olive">
+        <span class="color-option olive"></span>
+    </label>
+</div>
+                    <label>폰트:
+                        <select name="Font">
+                            <optgroup label="Font">
+                                <option>고딕</option>
+                                <option>돋움</option>
+                                <option>바탕</option>
+                                <option>굴림</option>
+                                <option>궁서체</option>
+                                <option>Elephant</option>
+                                <option>Ink Free</option>
+                                <option>Times New Roman</option>
+                                <option>TRADE GOTHIC INLINE</option>
+                                <option>DengXian</option>
+                                <option value="NanumGothic">NanumGothic</option>
+                            </optgroup>   
+                        </select>
+                        </label> 
+                        <br>
+                        <label>패턴:
+                            <select name="pattern">
+                                <optgroup label="pattern">
+                                    <option>격자무늬</option>
+                                    <option>물방울무늬</option>
+                                    <option>능삼무늬</option>
+                                    <option>체크무늬</option>
+                                    <option>줄무늬</option>
+                                    <option>하트무늬</option>
+                                    <option>아가일무늬</option>
+                                    <option>물결무늬</option>
+                                    <option>별무늬</option>
+                                    <option>하트무늬</option>
+                                </optgroup>   
+                            </select>
+                        </label>
+                        <br>
+                        <label for="uploadImage">사진:</label>
+                        <input type="file" id="uploadImage">               
+                    </fieldset>
+                </div>
+                <h3 class="bottom-align">가격:
+                <span class="price">₩109,000</span>
+                <div class="product">
+                <br><a href="#" class="add-to-cart-button">카트에 담기</a>
+                </div>
+            </h3>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Custom Sound Lab DYH WEB server.</p>
+</footer>
+<script src="d.js"></script>
+<script>
+    // JavaScript 코드를 작성할 부분
+    // 색상 선택 옵션을 기기에 따라 동적으로 변경하고 이미지도 업데이트하는 등의 기능을 추가하세요.
+</script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+   body {
+        font-family: Nanum Gothic, sans-serif;
+        background-color: #fff;
+   }
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    color: inherit;
+}
+
+#wrap{
+    width: 100%;
+}
+
+#header{
+    position:fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1;
+    display:flex;
+    justify-content: space-between;
+    text-decoration: none;
+    line-height: 1.5;
+    background-color: #fff; 
+}
+
+#header > li > a > img {
+    width : 60px; 
+    margin-left: 80px;
+}
+
+#header > #gnb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 290px;
+    margin-right: 230px;
+}
+
+#header > #gnb::before {
+    content: "";
+    width: 100%;
+    position:absolute;
+    top: 90px;
+    left: 0;
+    height: 390px;
+    background: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.06);
+    display: block;
+}
+
+#header > #gnb::before {
+    display: none;
+}
+
+#header > #gnb.on::before {
+    display: block;
+}
+
+#header > #gnb > li .snb {
+    position:absolute;
+    top: 100px;
+    display:none;
+}
+
+#header > #gnb.on > li .snb {
+    display: block;
+}
+
+/* 멤버 밑 */
+#header > #gnb > li > .snb > ul > li + li {
+    margin-top:15px;
+}
+
+.gnb > li > ul a{
+    text-decoration: none;
+}
+
+/*기업 글씨*/
+.snb > ul > li  {
+    font-size: 22px;
+}
+
+/*기기종류별 글씨*/
+.snb  li  a {
+    font-size: 16px;
+}
+
+main {
+    background-color: #ffffff;
+    color: #000;
+    padding: 150px 200px 300px 200px;
+}
+
+/*기기색상 선택 버튼*/
+.color-option {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+    /*기기색상표*/
+    .black { background-color: rgb(0, 0, 0); }
+    .white { background-color: rgb(255, 255, 255); }
+    .purple { background-color: rgb(234,222,244) ; }
+    .onyx { background-color: rgb(53, 56, 57); }
+    .olive { background-color:rgb(131, 160, 131); }
+        
+    #colorDisplay {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
+
+    /*캔버스*/
+    #stampCanvas{
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* 컨테이너 스타일 */
+    #container {
+    margin: 0 auto;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  /* 폼 요소 스타일 */
+  input[type="text"],
+  select,
+  button,
+  input[type="color"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  /*각인 버튼*/
+  button {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+  }
+  
+  button:hover {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  /* 커스텀 필드 스타일 */
+  fieldset {
+    max-width: 450px;
+    margin-top: 20px;
+    margin-left: 821px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  
+  /* 텍스트 컨테이너 스타일 */
+  .text-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 색상 옵션 스타일 */
+  .color-option {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* 기기 선택 셀렉트 박스 스타일 */
+  #deviceSelect {
+    width: 100%;
+  }
+  
+  /* 컬러 디스플레이 스타일 */
+  #colorDisplay {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+
+  .btn-upload {
+    width: 150px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid rgb(77,77,77);
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .btn-upload:hover {
+      background: rgb(77,77,77);
+      color: #fff;
+    }
+  
+  #file {
+    display: none;
+  }
+
+  /*맨밑 버튼*/
+  .custombtn{
+    width: 440px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 827px;
+  }
+
+  /*장바구니 담기 버튼*/
+  .custombtnleft{
+    background-color: white;
+    color: black;
+    border: 1.5px rgb(0, 0, 0) solid;
+    display: inline-block
+  }
+
+  /*바로 구매하기 버튼*/
+  .custombtnright{
+    background-color: #000;
+    color: white;
+    border: none;
+    display: inline-block
+  }
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+    

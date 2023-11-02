@@ -1,0 +1,283 @@
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+ul,li{
+  list-style: none;
+  
+}
+
+a{
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 500;
+  color: inherit;
+}
+
+
+#wrap{
+  width: 100%;
+}
+
+#header{
+  position:fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 30px 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e1e1e1;
+  display:flex;
+  justify-content: space-between;
+  text-decoration: none;
+  line-height: 1.5;
+  background-color: #fff;
+  
+}
+
+#header > li > a > img {
+  width : 60px; 
+  margin-left: 80px;
+
+}
+
+#header > #gnb {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 290px;
+  margin-right: 230px;
+}
+
+#header > #gnb::before {
+  content: "";
+  width: 100%;
+  position:absolute;
+  top: 90px;
+  left: 0;
+  height: 390px;
+  background: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.06);
+  display: block;
+}
+
+#header > #gnb::before {
+  display: none;
+}
+
+#header > #gnb.on::before {
+  display: block;
+}
+
+#header > #gnb > li .snb {
+  position:absolute;
+  top: 100px;
+  display:none;
+  
+ 
+}
+
+#header > #gnb.on > li .snb {
+  display: block;
+}
+/* 멤버 밑 */
+#header > #gnb > li > .snb > ul > li + li {
+  margin-top:15px;
+}
+
+.gnb > li > ul a{
+  text-decoration: none;
+
+}
+/*기업 글씨*/
+.snb > ul > li  {
+  font-size: 22px;
+  
+
+}
+/*기기종류별 글씨*/
+.snb  li  a {
+  font-size: 16px;
+
+}
+
+
+
+main {
+  background-color: #fff;
+  color: #000;
+  padding: 150px 200px 0px 200px;
+}
+
+p, span {
+  margin: 0;
+}
+
+
+.shopping {
+  width: 95%;
+  margin: auto;
+  padding: 22px;
+}
+
+.shopping ul {
+  background-color: whitesmoke;
+  padding: 30px;
+  margin-bottom: 50px;
+  border: whitesmoke solid 1px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+
+table {
+  border-top: solid 1.5px black;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+.img {
+  display: block;
+  width: 20px;
+  height: 60px;
+}
+
+thead {
+  text-align: center;
+  font-weight: bold;
+}
+
+tbody {
+  font-size: 15px;
+  
+}
+
+td {
+  padding: 15px 0px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.shopping__list__detail :nth-child(3) {
+  vertical-align: top;
+}
+
+.shopping__list__detail :nth-child(3) a {
+  font-size: 15px;
+}
+
+.shopping__list__detail :nth-child(3) p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.shopping__list__apple {
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+}
+.shopping__list__SONY {
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+}
+
+.shopping__list__option {
+  vertical-align: top;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.shopping__list__option p {
+  margin-bottom: 25px;
+  
+}
+
+/* .cart__list__option p::after {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: lightgrey;
+  left: 0px;
+  top: 25px;
+  position: absolute;
+} */
+
+.shopping__list__optionbtn {
+  background-color: white;
+  font-size: 14px;
+  border: rgb(0, 0, 0) solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.shopping__list__detail :nth-child(4),
+.shopping__list__detail :nth-child(5),
+.shopping__list__detail :nth-child(6) {
+  border-left: 2px solid whitesmoke;
+}
+
+.shopping__list__detail :nth-child(5),
+.shopping__list__detail :nth-child(6) {
+  text-align: center;
+}
+
+.shopping__list__detail :nth-child(5) button {
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.shopping__mainbtns {
+  width: 420px;
+  height: 200px;
+  padding-top: 40px;
+  display: block;
+  margin: auto;
+}
+
+.shopping__bigorderbtn {
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.shopping__bigorderbtn.left {
+  background-color: white;
+  border: 1.5px rgb(0, 0, 0) solid;
+}
+
+.shopping__bigorderbtn.right {
+  background-color: #000;
+  color: white;
+  border: none;
+}
+
+.shopping__list__detail img{
+  width:100px
+}
+
+footer {
+  background-color: #000;
+	color: #fff;
+	padding: 15px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
