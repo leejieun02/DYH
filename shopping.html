@@ -93,10 +93,10 @@
             </ul>
         </div>
         <table class="shopping__list">
-            <form></form>
+            <form>
                 <thead>
                     <tr>
-                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox" id="selectAll"></td>
                         <td colspan="2">상품정보</td>
                         <td>옵션</td>
                         <td>상품금액</td>
@@ -106,10 +106,11 @@
                 <tbody>
                     <tr class="shopping__list__detail">
                         <td> &nbsp;<input type="checkbox"></td>
-                        <td> &nbsp; &nbsp; <img src="AirPods.jpg" alt="Airpods Pro"></td>
-                        <td><a href="#">Apple</a><span class="shopping__list__apple"> 애플</span>
-                            <p>AirPods Pro(에어팟 프로)</p>
-                            <sapn class="price">359,000원</sapn>
+                        <td> &nbsp; &nbsp; <img src="AirPods.jpg" alt="Airpods Pro">
+                        <!-- 아래 링크를 수정하십시오 -->
+                        <td>Apple</a><span class="shopping__list__apple"> 애플</span>
+                            <a href="[3] inst_airpodspro.html"><p>AirPods Pro(에어팟 프로)</p></a>
+                            <span class="price">359,000원</span>
                         </td>
                         <td class="shopping__list__option">
                             <p>Airpods Pro / 1개</p>
@@ -124,10 +125,10 @@
                         <td style="width: 2%;"> &nbsp;<input type="checkbox"></td>
                         <td style="width: 13%;">
                             &nbsp; &nbsp; <img src="Sony.png" alt="WH-1000XM4">
-                        </td>
-                        <td style="width: 27%;"><a href="#">Sony</a><a><span class="shopping__list__SONY"> 소니</span>
-                            <p>WH-1000XM4 - Black</p>
-                            <span class=" price">459,000원</span>
+                        <!-- 아래 링크를 수정하십시오 -->
+                        <td style="width: 27%;">Sony<a><span class="shopping__list__SONY"> 소니</span>
+                            <a href="[7] inst_WH1000XM4.html"><p>WH-1000XM4 - Black</p></a>
+                            <span class="price">459,000원</span>
                         </td>
                         <td class="shopping__list__option" style="width: 27%;">
                             <p>WH-1000XM4 / 1개</p>
@@ -149,16 +150,18 @@
                         <td></td>
                     </tr>
                 </tfoot>
-            
+            </form>
         </table>
+        
         <div class="shopping__mainbtns">
-            <button class="shopping__bigorderbtn left"><a href="#">쇼핑 계속하기</a></button>
-            <button class="shopping__bigorderbtn right"><a href="p.html">결제하기</a></button>
+            <button class="shopping__bigorderbtn left"><a href="main.html">쇼핑 계속하기</a></button>
+            <button class="shopping__bigorderbtn right"><a href="order.html">결제하기</a></button>
         </div>
     </section>
 </main> 
 <footer>
     <p>&copy; 2023 Custom Sound Lab DYH WEB server.</p>
  </footer>    
+ <script src="shopping.js"></script>
 </body>
 </html>
