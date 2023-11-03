@@ -1,0 +1,70 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p.css">
+    <title>쇼핑몰</title>
+</head>
+<body>
+    <header>
+        <h1>쇼핑몰</h1>
+    </header>
+    <div class="container">
+        
+    </div>
+    <div class="checkout">
+        <h2>주문 요약</h2>
+        <p>총 금액: $100.00</p>
+        <button id="checkout-button">결제</button>
+    </div>
+</body>
+<script src="p.js"></script>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문 페이지</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="container">
+        <h1>주문 페이지</h1>
+        <form id="order-form">
+            <label for="product">주문 상품:</label>
+            <select id="product" required>
+                <option value="product1" data-price="359000">Apple AirPods Pro</option>
+                <option value="product2" data-price="459000">SONY WH-1000XM4 / Black</option>
+            </select>
+
+            <label for="quantity">수량:</label>
+            <input type="number" id="quantity" placeholder="수량" required>
+
+            <label for="name">이름:</label>
+            <input type="text" id="name" placeholder="이름" required>
+
+            <label for="address">배송 주소:</label>
+            <input type="text" id="address" placeholder="배송 주소" required>
+            <input type="text" id="address" placeholder="상세 주소" required>
+            <label for="payment-method">결제 방법 선택:</label>
+            <select id="payment-method" required>
+                <option value="credit-card">신용카드</option>
+                <option value="bank-transfer">가상계좌</option>
+                <option value="kakao-pay">카카오페이</option>
+                <option value="naver-pay">네이버페이</option>
+            </select>
+
+            <p>총 가격: <span id="total-price">₩0</span></p>
+
+            <button type="submit"><a href="p.html">결제하기</a></button>
+        </form>
+    </div>
+    <script src="order.js"></script>
+</body>
+</html>
+
+
+ 
