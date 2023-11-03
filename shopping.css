@@ -3,12 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 ul,li{
   list-style: none;
-  
 }
 
 a{
@@ -17,7 +15,6 @@ a{
   font-weight: 500;
   color: inherit;
 }
-
 
 #wrap{
   width: 100%;
@@ -36,7 +33,7 @@ a{
   text-decoration: none;
   line-height: 1.5;
   background-color: #fff;
-  
+  z-index: 2; /* 마우스가 gnb 메뉴에 진입할 때 글씨 겹침현상 해결 오류 */
 }
 
 #header > li > a > img {
