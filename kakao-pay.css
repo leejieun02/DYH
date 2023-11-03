@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ffffff; 
+    color: #000000; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    border: 1px rgb(0, 0, 0) solid;
+    width: 92px; /* 너비를 150px로 설정 */
+    height: 50px; /* 높이를 40px로 설정 */
+    margin-right: 4px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    border: 1px rgb(255, 255, 255) solid;
+}
