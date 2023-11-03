@@ -1,17 +1,17 @@
+let gnb = document.querySelectorAll("#gnb > li");
+let gnbElement = document.querySelector("#gnb");
+let headerElement = document.querySelector("#header");
 
-let gnb = document.querySelectorAll("#gnb > li")
-let gnbElement = document.querySelector("#gnb")
-
+// 마우스가 gnb 메뉴에 진입할 때
 for (let i = 0; i < gnb.length; i++) {
-    gnb[i].addEventListener("mouseover",() => {
-        gnbElement.classList.add("on")
-    })
+    gnb[i].addEventListener("mouseover", () => {
+        gnbElement.classList.add("on");
+    });
 }
 
-let headerElement = document.querySelector("#header")
-
-header.addEventListener("mouseout",(e) =>{
-    if (e.target.id == "gnb" ){
-        gnbElement.classList.remove("on")
+// gnb 메뉴를 벗어날 때
+headerElement.addEventListener("mouseleave", (e) => {
+    if (e.relatedTarget.id !== "gnb") {
+        gnbElement.classList.remove("on");
     }
-})
+});
