@@ -50,11 +50,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const selectedDevice = deviceSelect.value;
   
     if (selectedDevice === 'device1') {
-      deviceImage.src = '버즈 블랙.png';
+      deviceImage.src = 'buds실물.png';
     } else if (selectedDevice === 'device2') {
-      deviceImage.src = '버즈.jpg';
+      deviceImage.src = 'budspro실물.png';
+    } else if (selectedDevice === 'device3') {
+      deviceImage.src = 'airpods2실.png';
+    } else if (selectedDevice === 'device4') {
+      deviceImage.src = 'airpods3실.png';
+    } else if (selectedDevice === 'device5') {
+      deviceImage.src = 'airpodspro실.png';
+    } else if (selectedDevice === 'device6') {
+      deviceImage.src = 'AirMax실.png';
+    } else if (selectedDevice === 'device7') {
+      deviceImage.src = 'WH1000xm4실.png';
+    } else if (selectedDevice === 'device8') {
+      deviceImage.src = 'WH-1000xm5실.png';
     }
-  
+   
     // 이미지가 변경될 때 기존에 각인된 텍스트 초기화
     resetStampedText();
   });
