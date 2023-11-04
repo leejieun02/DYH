@@ -80,4 +80,3 @@ checkoutButton.addEventListener('click', function() {
         alert('선택된 상품이 없습니다.');
     }
 });
-
