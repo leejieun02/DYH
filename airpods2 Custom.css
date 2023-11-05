@@ -104,12 +104,15 @@ main {
 .image-container {
     position: relative;
     display: inline-block;
-    padding-top: 120px;
+    
+    
 }
 
 .image {
-    max-width: 100%;
-    margin-left: 150px;
+    width: 600px;
+    margin-left: 300px;
+    margin-top: 200px;
+    
 }
 
 .text-overlay {
@@ -180,7 +183,7 @@ button:hover {
     margin: 10px 0;
 }
 .box{
-    margin-top: -650px;
+    margin-top: -600px;
     padding-left: 1100px;
 }
 .color a{
